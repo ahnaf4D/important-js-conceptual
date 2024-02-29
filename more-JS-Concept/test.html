@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+<body>
+    <p id="user-name" onclick="loadData()">jj</p>
+    <script>
+        const loadData = async() => {
+            const response  = await fetch(`https://mocki.io/v1/a36947f0-ef77-4243-afc6-8fa2361c513a`);
+            const data = await response.json();
+            console.log(data);
+        }
+    </script>
+</body>
+</html>
